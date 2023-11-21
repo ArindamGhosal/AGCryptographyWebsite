@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+</style>
+</head>
+<body>
+
+<div id="overlay" onclick="off()">
+  <div id="text">
+🎓 Welcome to the Gateway of Enlightenment! 🌟
+
+We're thrilled to have you embark on a journey through the digital halls of wisdom and discovery. This isn't just a website; it's your passport to a world where curiosity knows no bounds and learning is a lifelong adventure. 🚀📚
+
+Whether you're here to sharpen your skills, explore new horizons, or simply indulge your intellectual wanderlust, you've come to the right place. Our virtual corridors are filled with the echoes of brilliant minds and the excitement of endless possibilities. 🌐💡
+
+Get ready to dive into a treasure trove of knowledge, where each click opens a door to new insights and opportunities. From the basics to the cutting edge, we've got your educational odyssey covered. 🌈🧠
+
+So, grab your digital backpack, fasten your seatbelt, and prepare to soar to new heights of understanding. Welcome to a community where curiosity is the compass, and the pursuit of knowledge is the ultimate adventure! 🚀🔍📖
+
+
+
+
+
+</div>
+</div>
+
+<div style="padding:20px">
+  <h2>Introduction</h2>
+  <button onclick="on()">Message</button>
+</div>
+
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+   
+</body>
+</html> 
